@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estúdio de tatuagem em Manchester | Obscura Tattoo</title>
+<meta name="description" content="Estúdio privado de tatuagem em Manchester. Realismo a preto e cinza, blackwork, neotradicional e fine line, desenhados à medida.">
+<!-- Modelo em desenvolvimento, estúdio fictício: não indexar. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0A09">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Gloock-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="img/braco-peonias.jpg" as="image">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+<!-- Grão de película e vinheta: puramente decorativos -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="site-header" id="topo">
+  <nav class="nav" aria-label="Principal">
+    <a class="logo" href="#topo" aria-label="Obscura Tattoo, início">Obscura</a>
+    <ul class="nav__links">
+      <li><a href="#bobina">Trabalho</a></li>
+      <li><a href="#estilos">Estilos</a></li>
+      <li><a href="#elenco">Artistas</a></li>
+      <li><a href="#estudio">Estúdio</a></li>
+    </ul>
+    <a class="btn btn--light nav__cta" href="#marcar">Pedir marcação</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </nav>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <ul>
+    <li><a href="#bobina">Trabalho</a></li>
+    <li><a href="#estilos">Estilos</a></li>
+    <li><a href="#elenco">Artistas</a></li>
+    <li><a href="#estudio">Estúdio</a></li>
+    <li><a href="#processo">Como funciona</a></li>
+    <li><a href="#marcar">Pedir marcação</a></li>
+  </ul>
+  <button class="menu__close" type="button">Fechar</button>
+</div>
+
+<main id="conteudo">
+
+  <!-- CENA 1 · Abertura -->
+  <section class="hero" data-scene="Abertura" aria-labelledby="hero-titulo">
+    <div class="hero__media">
+      <img src="img/braco-peonias.jpg" width="636" height="1272" fetchpriority="high"
+           alt="Braço com uma composição de peónias e folhas a preto e cinza, sombreado suave, fotografado com luz quente.">
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="bar bar--top" aria-hidden="true"></div>
+    <div class="bar bar--bottom" aria-hidden="true"></div>
+    <p class="intro-card" aria-hidden="true">Obscura apresenta</p>
+
+    <div class="hero__content">
+      <h1 id="hero-titulo" class="hero__title">
+        <span class="line"><span>A tinta fica</span></span>
+        <span class="line"><span>depois dos créditos.</span></span>
+      </h1>
+      <p class="hero__lead">Estúdio privado de tatuagem em Manchester. Realismo, blackwork e neotradicional, desenhados para o teu corpo e para mais ninguém.</p>
+      <div class="hero__actions">
+        <a class="btn btn--light" href="#marcar">Pedir marcação</a>
+        <a class="btn btn--ghost" href="#bobina">Ver o trabalho</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENA 2 · Manifesto: as palavras acendem com o scroll -->
+  <section class="manifesto" data-scene="Manifesto" aria-label="Como trabalhamos">
+    <div class="manifesto__sticky">
+      <p class="manifesto__text" data-words>Não fazemos tatuagens à pressa. Cada peça começa como um guião: a tua história, o sítio no corpo, a forma como a pele apanha a luz. Desenhamos, ensaiamos o stencil e só depois ligamos a máquina.</p>
+    </div>
+  </section>
+
+  <!-- CENA 3 · Bobina de trabalho (scroll horizontal no desktop) -->
+  <section class="reel" id="bobina" data-scene="Trabalho" aria-labelledby="bobina-titulo">
+    <div class="reel__pin">
+      <div class="reel__head">
+        <h2 id="bobina-titulo">Trabalho recente</h2>
+        <p class="reel__hint"><span class="desk">Continua a descer para correr a bobina.</span><span class="touch">Arrasta para o lado.</span> Toca numa imagem para a ver maior.</p>
+      </div>
+      <div class="reel__viewport">
+        <ol class="reel__track">
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/peonias-ombro.jpg">
+            <span class="frame__img"><img src="img/peonias-ombro.jpg" width="426" height="435" loading="lazy" decoding="async" alt="Peónias a preto e cinza no ombro e braço."></span>
+            <span class="frame__cap"><b>Peónias</b> Mara Quinn, blackwork floral</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 01</span>
+          </button></li>
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/leao-realismo.jpg">
+            <span class="frame__img"><img src="img/leao-realismo.jpg" width="426" height="435" loading="lazy" decoding="async" alt="Retrato realista de um leão a preto e cinza, de frente, com juba detalhada."></span>
+            <span class="frame__cap"><b>Leão</b> Callum Reid, realismo</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 02</span>
+          </button></li>
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/mulher-neotradicional.jpg">
+            <span class="frame__img"><img src="img/mulher-neotradicional.jpg" width="420" height="435" loading="lazy" decoding="async" alt="Rosto de mulher neotradicional com flores vermelhas no cabelo."></span>
+            <span class="frame__cap"><b>Musa</b> Inês Duarte, neotradicional</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 03</span>
+          </button></li>
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/serpente-blackwork.jpg">
+            <span class="frame__img"><img src="img/serpente-blackwork.jpg" width="426" height="444" loading="lazy" decoding="async" alt="Serpente enrolada em blackwork ao longo do antebraço."></span>
+            <span class="frame__cap"><b>Serpente</b> Reece Hollis, blackwork</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 04</span>
+          </button></li>
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/montanha-floresta.jpg">
+            <span class="frame__img"><img src="img/montanha-floresta.jpg" width="426" height="444" loading="lazy" decoding="async" alt="Montanha e pinheiros a preto e cinza na parte de trás do braço."></span>
+            <span class="frame__cap"><b>Cordilheira</b> Callum Reid, paisagem</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 05</span>
+          </button></li>
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/mandala-flor.jpg">
+            <span class="frame__img"><img src="img/mandala-flor.jpg" width="420" height="444" loading="lazy" decoding="async" alt="Flor ornamental em forma de mandala, linhas finas e pontilhado."></span>
+            <span class="frame__cap"><b>Lótus</b> Mara Quinn, ornamental</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 06</span>
+          </button></li>
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/rosa-tradicional.jpg">
+            <span class="frame__img"><img src="img/rosa-tradicional.jpg" width="411" height="321" loading="lazy" decoding="async" alt="Rosa vermelha tradicional com folhas verdes e contorno grosso."></span>
+            <span class="frame__cap"><b>Rosa</b> Reece Hollis, tradicional</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 07</span>
+          </button></li>
+          <li class="frame"><button type="button" class="frame__btn" data-full="img/flor-fine-line.jpg">
+            <span class="frame__img"><img src="img/flor-fine-line.jpg" width="411" height="321" loading="lazy" decoding="async" alt="Flor delicada em linha fina com sombreado leve."></span>
+            <span class="frame__cap"><b>Flor</b> Mara Quinn, fine line</span>
+            <span class="frame__code" aria-hidden="true">OBX 5219 08</span>
+          </button></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="projector" id="projector" aria-label="Imagem ampliada">
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+    <div class="projector__bar">
+      <p class="projector__cap"></p>
+      <div class="projector__ctrls">
+        <button type="button" data-p="prev" aria-label="Imagem anterior">&#8249;</button>
+        <button type="button" data-p="next" aria-label="Imagem seguinte">&#8250;</button>
+        <button type="button" data-p="close">Fechar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CENA 4 · Estilos: a imagem aparece ao passar o rato -->
+  <section class="styles" id="estilos" data-scene="Estilos" aria-labelledby="estilos-titulo">
+    <div class="wrap">
+      <h2 id="estilos-titulo" class="section-title">Seis géneros, uma direção</h2>
+      <ul class="styles__list">
+        <li><a href="#marcar" data-img="img/leao-realismo.jpg" data-style="Realismo"><img src="img/leao-realismo.jpg" alt="" width="426" height="435" loading="lazy"><span class="styles__name">Realismo</span><span class="styles__desc">Retratos, animais e texturas a preto e cinza.</span></a></li>
+        <li><a href="#marcar" data-img="img/serpente-blackwork.jpg" data-style="Blackwork"><img src="img/serpente-blackwork.jpg" alt="" width="426" height="444" loading="lazy"><span class="styles__name">Blackwork</span><span class="styles__desc">Preto sólido, contraste máximo, peças que se leem ao longe.</span></a></li>
+        <li><a href="#marcar" data-img="img/mulher-neotradicional.jpg" data-style="Neotradicional"><img src="img/mulher-neotradicional.jpg" alt="" width="420" height="435" loading="lazy"><span class="styles__name">Neotradicional</span><span class="styles__desc">Contorno firme, cor rica e muito ornamento.</span></a></li>
+        <li><a href="#marcar" data-img="img/flor-fine-line.jpg" data-style="Fine line"><img src="img/flor-fine-line.jpg" alt="" width="411" height="321" loading="lazy"><span class="styles__name">Fine line</span><span class="styles__desc">Agulha fina, desenho leve, peças pequenas.</span></a></li>
+        <li><a href="#marcar" data-img="img/rosa-tradicional.jpg" data-style="Tradicional"><img src="img/rosa-tradicional.jpg" alt="" width="411" height="321" loading="lazy"><span class="styles__name">Tradicional</span><span class="styles__desc">Linhas grossas e cores sólidas que aguentam décadas.</span></a></li>
+        <li><a href="#marcar" data-img="img/mandala-flor.jpg" data-style="Ornamental"><img src="img/mandala-flor.jpg" alt="" width="420" height="444" loading="lazy"><span class="styles__name">Ornamental</span><span class="styles__desc">Mandalas, pontilhado e simetria.</span></a></li>
+      </ul>
+    </div>
+    <div class="styles__float" aria-hidden="true"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="></div>
+  </section>
+
+  <!-- CENA 5 · Elenco -->
+  <section class="cast" id="elenco" data-scene="Artistas" aria-labelledby="elenco-titulo">
+    <div class="wrap">
+      <div class="split-head">
+        <h2 id="elenco-titulo" class="section-title">O elenco</h2>
+        <p class="muted">Quatro artistas residentes. Se não sabes quem escolher, conta-nos a ideia e fazemos o casting por ti.</p>
+      </div>
+      <ul class="cast__grid">
+        <li class="actor">
+          <div class="actor__img"><img class="focus" src="img/artista-mara.jpg" width="306" height="453" loading="lazy" alt="Retrato de Mara Quinn, de cabelo apanhado e braços tatuados."></div>
+          <h3>Mara Quinn</h3>
+          <p class="actor__role">Fine line e ornamental</p>
+          <p class="actor__status is-open">Agenda aberta em dezembro</p>
+          <a class="actor__book" href="#marcar" data-artist="mara">Marcar com a Mara</a>
+        </li>
+        <li class="actor">
+          <div class="actor__img"><img class="focus" src="img/artista-callum.jpg" width="300" height="453" loading="lazy" alt="Retrato de Callum Reid, de gorro e barba, a trabalhar."></div>
+          <h3>Callum Reid</h3>
+          <p class="actor__role">Realismo a preto e cinza</p>
+          <p class="actor__status is-wait">Lista de espera de 8 semanas</p>
+          <a class="actor__book" href="#marcar" data-artist="callum">Entrar na lista do Callum</a>
+        </li>
+        <li class="actor">
+          <div class="actor__img"><img class="focus" src="img/artista-ines.jpg" width="300" height="453" loading="lazy" alt="Retrato de Inês Duarte, de franja e braços tatuados."></div>
+          <h3>Inês Duarte</h3>
+          <p class="actor__role">Neotradicional</p>
+          <p class="actor__status is-open">Agenda aberta em novembro</p>
+          <a class="actor__book" href="#marcar" data-artist="ines">Marcar com a Inês</a>
+        </li>
+        <li class="actor">
+          <div class="actor__img"><img class="focus" src="img/artista-reece.jpg" width="297" height="453" loading="lazy" alt="Retrato de Reece Hollis, de boné e braços tatuados."></div>
+          <h3>Reece Hollis</h3>
+          <p class="actor__role">Tradicional e blackwork</p>
+          <p class="actor__status is-open">Aceita walk-ins à sexta</p>
+          <a class="actor__book" href="#marcar" data-artist="reece">Marcar com o Reece</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CENA 6 · Bastidores -->
+  <section class="studio" id="estudio" data-scene="Estúdio" aria-labelledby="estudio-titulo">
+    <div class="wrap studio__grid">
+      <div class="studio__img"><img class="focus parallax" src="img/estudio-cadeira.jpg" width="486" height="891" loading="lazy" alt="Interior do estúdio com cadeira de couro preto, candeeiro de braço, plantas e desenhos emoldurados na parede."></div>
+      <div class="studio__text">
+        <h2 id="estudio-titulo" class="section-title">Bastidores</h2>
+        <p class="lead">Uma sala, uma cadeira, uma pessoa de cada vez. Sem montra, sem público, sem pressa.</p>
+        <dl class="facts">
+          <div><dt>Higiene</dt><dd>Agulhas e tintas de uso único, superfícies seladas, registo no Manchester City Council.</dd></div>
+          <div><dt>Privacidade</dt><dd>Sala fechada, ideal para costas, costela ou peças maiores.</dd></div>
+          <div><dt>Tempo</dt><dd>Reservamos 30 minutos para o stencil antes de começar.</dd></div>
+        </dl>
+      </div>
+    </div>
+    <figure class="scope">
+      <div class="scope__frame"><img class="focus" src="img/maos-sessao.jpg" width="1000" height="468" loading="lazy" alt="Mãos de luvas pretas a tatuar a mão de um cliente, em plano aproximado."></div>
+      <figcaption>
+        <blockquote>Uma tatuagem é a única cena que não se pode cortar na montagem.</blockquote>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- CENA 7 · Processo -->
+  <section class="process" id="processo" data-scene="Processo" aria-labelledby="processo-titulo">
+    <div class="wrap">
+      <div class="split-head">
+        <h2 id="processo-titulo" class="section-title">Do guião à rodagem</h2>
+        <p class="muted">Nada é pago antes de aprovares o desenho e o orçamento.</p>
+      </div>
+      <ol class="takes">
+        <li><h3>Guião</h3><p>Envias a ideia, o sítio no corpo, o tamanho e referências. Cerca de cinco minutos.</p></li>
+        <li><h3>Storyboard</h3><p>Em dois dias úteis recebes artista, orçamento e datas livres.</p></li>
+        <li><h3>Ensaio</h3><p>Depósito de £60 para guardar a data. Desenho pronto no dia, ajustado contigo.</p></li>
+        <li><h3>Rodagem</h3><p>Stencil, aprovação final e só depois a máquina. Levas o guia de cuidados para casa.</p></li>
+      </ol>
+      <dl class="prices">
+        <div><dt>Mínimo do estúdio</dt><dd>£80</dd></div>
+        <div><dt>Hora</dt><dd>£130</dd></div>
+        <div><dt>Dia inteiro (6 h)</dt><dd>£650</dd></div>
+        <div><dt>Depósito</dt><dd>£60</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- CENA 8 · Marcação -->
+  <section class="booking" id="marcar" data-scene="Marcação" aria-labelledby="marcar-titulo">
+    <div class="booking__media" aria-hidden="true"><img class="focus" src="img/maquina-luvas.jpg" width="645" height="780" loading="lazy" alt=""></div>
+    <div class="wrap booking__grid">
+      <div class="booking__intro">
+        <h2 id="marcar-titulo" class="section-title">Pedir marcação</h2>
+        <p class="lead">Conta-nos a história. Quanto mais concreta, mais rápida é a proposta.</p>
+        <ul class="booking__facts">
+          <li>Resposta em 2 dias úteis</li>
+          <li>Consulta grátis e sem compromisso</li>
+          <li>Ter a sáb, 11h–19h. Fechado domingo e segunda.</li>
+        </ul>
+      </div>
+
+      <form class="form" id="form" novalidate data-endpoint="">
+        <div class="form__errors" id="form-erros" role="alert" tabindex="-1" hidden>
+          <p>Falta corrigir:</p>
+          <ul></ul>
+        </div>
+        <div class="row">
+          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required><p class="err" id="nome-erro"></p></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><p class="err" id="email-erro"></p></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="artista">Artista</label>
+            <select id="artista" name="artista" required>
+              <option value="">Escolhe uma opção</option>
+              <option value="casting">Sem preferência, façam o casting</option>
+              <option value="mara">Mara Quinn, fine line e ornamental</option>
+              <option value="callum">Callum Reid, realismo</option>
+              <option value="ines">Inês Duarte, neotradicional</option>
+              <option value="reece">Reece Hollis, tradicional e blackwork</option>
+            </select><p class="err" id="artista-erro"></p></div>
+          <div class="field"><label for="data">Data preferida <span class="opt">(opcional)</span></label><input id="data" name="data" type="date"></div>
+        </div>
+        <div class="field"><label for="ideia">A tua ideia</label>
+          <p class="hint" id="ideia-dica">Exemplo: "Leão realista na parte de fora do braço, olhar para a frente, sem cor."</p>
+          <textarea id="ideia" name="ideia" required aria-describedby="ideia-dica ideia-erro"></textarea><p class="err" id="ideia-erro"></p></div>
+        <div class="row">
+          <div class="field"><label for="zona">Zona do corpo</label>
+            <select id="zona" name="zona" required>
+              <option value="">Escolhe uma zona</option>
+              <option>Braço / antebraço</option><option>Ombro</option><option>Mão / pulso</option><option>Costas</option>
+              <option>Peito / costela</option><option>Perna</option><option>Outra (explico na ideia)</option>
+            </select><p class="err" id="zona-erro"></p></div>
+          <div class="field"><label for="tamanho">Tamanho aproximado</label>
+            <select id="tamanho" name="tamanho" required>
+              <option value="">Escolhe um tamanho</option>
+              <option>Até 8 cm</option><option>8 a 15 cm</option><option>15 a 25 cm</option><option>Manga ou peça grande</option>
+            </select><p class="err" id="tamanho-erro"></p></div>
+        </div>
+        <div class="field"><span class="label" id="ref-label">Imagens de referência <span class="opt">(opcional, até 5)</span></span>
+          <div class="drop" id="drop">
+            <input class="visually-hidden" id="ref" name="referencias" type="file" accept="image/jpeg,image/png,image/webp,image/heic" multiple aria-labelledby="ref-label" aria-describedby="ref-erro">
+            <label class="btn btn--ghost btn--sm" for="ref">Escolher imagens</label>
+            <span class="hint">ou arrasta-as para aqui</span>
+            <ul class="thumbs" id="thumbs" aria-live="polite"></ul>
+            <p class="err" id="ref-erro"></p>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" id="idade" name="idade" required><span>Tenho 18 anos ou mais e levo identificação com foto.</span></label>
+        <p class="err" id="idade-erro"></p>
+        <label class="check"><input type="checkbox" id="priv" name="privacidade" required><span>Aceito que guardem estes dados para responder ao pedido.</span></label>
+        <p class="err" id="priv-erro"></p>
+        <div class="hp" aria-hidden="true"><label for="site">Não preencher</label><input id="site" name="site" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn--light btn--lg" type="submit">Enviar pedido</button>
+      </form>
+      <div class="form__done" id="form-ok" tabindex="-1" hidden></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CENA FINAL · Créditos -->
+<footer class="credits" data-scene="Créditos">
+  <div class="credits__roll">
+    <p class="credits__logo">Obscura</p>
+    <dl class="credits__list">
+      <div><dt>Fine line e ornamental</dt><dd>Mara Quinn</dd></div>
+      <div><dt>Realismo</dt><dd>Callum Reid</dd></div>
+      <div><dt>Neotradicional</dt><dd>Inês Duarte</dd></div>
+      <div><dt>Tradicional e blackwork</dt><dd>Reece Hollis</dd></div>
+      <div><dt>Local de rodagem</dt><dd>12 Reel Yard, Northern Quarter, Manchester</dd></div>
+      <div><dt>Em cena</dt><dd>Terça a sábado, 11h–19h</dd></div>
+      <div><dt>Telefone</dt><dd><a href="tel:+441614960732">0161 496 0732</a></dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:ola@obscura.example">ola@obscura.example</a></dd></div>
+      <div><dt>Instagram</dt><dd>@obscura.tattoo</dd></div>
+    </dl>
+    <button class="btn btn--ghost credits__rewind" type="button" id="rebobinar">Rebobinar</button>
+    <p class="credits__note">Modelo de demonstração. Estúdio, nomes, morada e telefone (gama de ficção da Ofcom) são inventados. Fotografias de demonstração, a substituir pelo trabalho real do estúdio.</p>
+  </div>
+</footer>
+
+<!-- Painel de projeção: timecode e cena atual -->
+<div class="hud" aria-hidden="true">
+  <span class="hud__rec"><span class="hud__dot"></span><span class="hud__tc" id="tc">00:00:00:00</span></span>
+  <span class="hud__scene"><span id="scene-n">1</span><span id="scene-name">Abertura</span></span>
+</div>
+<div class="mobile-bar" id="mobile-bar">
+  <span class="mobile-bar__tc" aria-hidden="true"><span class="hud__dot"></span><span id="tc-m">00:00:00:00</span></span>
+  <a class="btn btn--light btn--sm" href="#marcar">Pedir marcação</a>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
